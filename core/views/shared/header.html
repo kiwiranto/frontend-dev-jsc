@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+@@if(context.style) {
+  @@for(var i=0; i < style.length; i++) {
+  <link rel="stylesheet" href="`+style[i]+`">
+  }
+}
+
+  <title>Front End Starterpack</title>
+</head>
+<body>
+  <header class="navbar navbar-dark bg-dark">
+    <nav>
+      <a href="#">Kelola Kontak</a>
+    </nav>
+    <div>
+      <button type="button" class="btn btn-success btn-add" id="BtnAddContact" onclick="getContact()">
+        <i class="fa fa-plus" aria-hidden="true"></i>
+        <span>Tambah Kontak</span>
+      </button>
+    </div>
+  </header>

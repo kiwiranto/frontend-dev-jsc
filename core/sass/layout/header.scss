@@ -1,0 +1,30 @@
+nav {
+  a {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+
+.btn-add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .fa {
+    margin-right: .5rem;
+    @include mobile {
+      margin-right: 0;
+    }
+  }
+
+  span {
+    @include mobile {
+      display: none;
+    }
+  }
+}

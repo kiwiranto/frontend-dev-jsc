@@ -1,0 +1,54 @@
+@@include('../shared/header.html', {
+  "style": [
+    "assets/css/vendor/bootstrap.css",
+    "assets/css/vendor/slick.css",
+    "assets/css/vendor/slick-theme.css",
+    "assets/css/vendor/font-awesome.min.css",
+    "assets/css/main.css"
+  ]
+})
+<main>
+  <div class="container">
+    <ul class="list-contact main"></ul>
+  </div>
+</main>
+
+<div class="modal fade" id="ModalContact" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Pilih Kontak</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="fa fa-times"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-contact popup"></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="ModalContactDetail" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Kontak Detail</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="fa fa-times"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+      </div>
+    </div>
+  </div>
+</div>
+
+@@include('../shared/footer.html', {
+  "script": [
+  "assets/js/vendor/jquery.min.js",
+  "assets/js/vendor/bootstrap.min.js",
+  "assets/js/app.min.js",
+  "assets/js/includes/homepage.js"
+  ]
+})
